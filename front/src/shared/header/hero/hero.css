@@ -1,0 +1,23 @@
+.hero_banner {
+  height: 300px;
+  background: url(../../../assets/assets_Homework_Front-End_01/bitmap.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero_banner .hero_banner_title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #cfb995;
+}
+.hero_banner .hero_banner_subtitle {
+  font-family: Montserrat;
+  color: white;
+  margin: 10px 0 40px;
+  font-size: 18px;
+}
+
+/* media queries */

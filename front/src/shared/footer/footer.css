@@ -1,0 +1,37 @@
+.footer_comp {
+  height: 200px;
+  background: url(../../assets/assets_Homework_Front-End_02/bitmap-copy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 60px;
+}
+
+.footer_comp .footer_content_text {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: white;
+  text-transform: uppercase;
+  max-width: 218px;
+}
+.footer_comp .footer_content_link {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #cfb995;
+  text-transform: uppercase;
+  max-width: 218px;
+  text-decoration: none;
+}
+
+.footer_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

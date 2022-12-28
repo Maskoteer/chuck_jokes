@@ -1,0 +1,83 @@
+.search_comp {
+  position: relative;
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.search_comp .search_comp_input {
+  font-size: 14px;
+  height: 45px;
+  background: transparent;
+  border: solid 2px white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  color: white;
+  outline: none;
+}
+.search_comp .search_comp_input:not(:placeholder-shown) {
+  background: white;
+  color: black;
+}
+
+.search_comp .search_comp_input_icon {
+  position: absolute;
+  top: 22.5px;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.search_comp .search_result {
+  position: absolute;
+  padding-top: 23px;
+  width: 100%;
+}
+.search_comp .search_result::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid white;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+.search_comp .search_result_container {
+  background: white;
+  padding: 0 15px;
+  border-radius: 2px;
+  box-shadow: 0px 0px 9px 0px #848080;
+}
+.search_comp .no_search_found {
+  padding: 30px;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 15px;
+  color: #918c8c;
+}
+.search_comp .search_result_link {
+  text-decoration: none;
+}
+.search_comp .search_result_element {
+  padding: 15px 0;
+  color: #5e5e5e;
+}
+.search_comp .search_result_link:not(:last-child) .search_result_element {
+  border-bottom: solid 1.5px #b2b2b2;
+}
+
+.search_comp .view_all_search_result {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Montserrat;
+  color: #d1bb93;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}

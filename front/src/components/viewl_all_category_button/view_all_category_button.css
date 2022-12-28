@@ -1,0 +1,8 @@
+.view_all_category_button {
+  background: transparent;
+  color: #d1bb93;
+  border: solid #d1bb93 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,0 +1,77 @@
+.home_page .jokes_categories {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  margin: 0 -15px;
+}
+.home_page .selected_catgory {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 40px 0 20px 0;
+  color: white;
+}
+.home_page .jokes_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.home_page .jokes_container .joke_item {
+  padding: 10px 15px;
+}
+.home_page .view_more_jokes_button {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  border-radius: 2px;
+  min-width: 206px;
+  padding: 14px 10px;
+  border: solid 1px #d0ba93;
+  color: #d0ba93;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 50px auto 0;
+}
+
+.home_page .no_data_found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home_page .no_data_info {
+  font-family: "Montserrat";
+  color: #929292;
+  font-size: 15px;
+  font-weight: 600;
+}
+.home_page .no_data_image {
+  max-width: 200px;
+}
+
+/* media queries */
+
+@media (min-width: 576px) {
+  .home_page .jokes_container .joke_item {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .home_page .jokes_container .joke_item {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}

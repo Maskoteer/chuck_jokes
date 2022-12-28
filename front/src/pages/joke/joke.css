@@ -1,0 +1,266 @@
+.joke_page .return_button {
+  background: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+.joke_page .return_button img {
+  position: absolute;
+  left: 41%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.joke_page .return_button svg {
+  width: 70px;
+  height: 70px;
+}
+
+.joke_page .joke_card {
+  padding: 20px;
+  border-radius: 3px;
+  border: solid 1.5px var(--card_border_color);
+  background-color: var(--card_background);
+  flex: 1;
+}
+.joke_page .joke_content {
+  display: flex;
+  flex-direction: column;
+}
+.joke_page .joke_card_title {
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #cfb995;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.joke_page .joke_card_title_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.joke_page .joke_card_title_separator {
+  flex: 1;
+  height: 2px;
+  background: #cfb995;
+  margin: 10px 15px 0 15px;
+}
+.joke_page .joke_card_rank {
+  font-family: "Montserrat";
+  color: #cfb995;
+  font-weight: 600;
+  font-size: 17px;
+}
+.joke_page .joke_card_top_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.joke_page .joke_card_popularity {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+}
+.joke_page .joke_card_category {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  color: white;
+  position: relative;
+}
+
+.joke_page .joke_card_category.uncategorized {
+  color: gray;
+  background: transparent;
+  border: solid 1.5px gray;
+}
+.joke_page .joke_card_category::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.joke_page .joke_card_category.uncategorized::before {
+  background: gray;
+}
+
+.joke_page .joke_card_description {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #303030;
+  font-weight: normal;
+}
+.joke_page .joke_score_content {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.joke_page .joke_score_like_content {
+  background: #68b680;
+}
+.joke_page .joke_score_like_content:hover {
+  background: #46915d;
+}
+.joke_page .joke_score_dislike_content {
+  background: #ff3750;
+}
+.joke_page .joke_score_dislike_content:hover {
+  background: #ce2c41;
+}
+
+.joke_page .joke_score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.joke_page .joke_score_action {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.joke_page .joke_score_count {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 15px;
+}
+.joke_page .joke_score_count_likes {
+  color: #68b680;
+}
+.joke_page .joke_score_count_dislikes {
+  color: #ff3750;
+}
+
+.joke_page .joke_pagination {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #d0ba93;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: white;
+  width: 135px;
+  padding: 10px;
+  border-radius: 2px;
+  border: solid 1.5px var(--card_border_color);
+}
+.joke_page .next_joke {
+  margin: 0 0 0 auto;
+}
+.joke_page .pagination_action {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.joke_page .joke_bottom_actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.joke_page .joke_arrow_icon {
+  width: 9px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.joke_page .top_jokes_content {
+  padding: 30px;
+  border-radius: 3px;
+  border: solid 1.5px var(--card_border_color);
+  background-color: var(--card_background);
+}
+.joke_page .top_10_title {
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #303030;
+  text-transform: uppercase;
+}
+.joke_page .top_10_joke {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #303030;
+  font-weight: normal;
+  display: block;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.joke_page .main_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* media queries */
+
+@media (min-width: 992px) {
+  .joke_page .joke_content {
+    flex: 0 0 auto;
+    width: 70%;
+    padding-right: 15px;
+  }
+  .joke_page .top_jokes_container {
+    flex: 0 0 auto;
+    width: 30%;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 991px) {
+  .joke_page .joke_content,
+  .joke_page .top_jokes_container {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+  .joke_page .top_jokes_content {
+    margin-top: 30px;
+  }
+  .joke_page .return_button {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .joke_page .joke_bottom_actions {
+    flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .joke_page .pagination_action {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

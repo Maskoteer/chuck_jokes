@@ -1,0 +1,40 @@
+.category_btn_container {
+  padding: 0 15px;
+}
+.category_btn {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-transform: uppercase;
+  border-radius: 2px;
+  width: 100%;
+  padding: 14px 10px;
+  border: solid 1px transparent;
+  color: white;
+}
+.category_btn.selected {
+  border-color: black;
+}
+
+/* media queries */
+
+@media (min-width: 300px) {
+  .category_btn_container {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 576px) {
+  .category_btn_container {
+    flex: 0 0 auto;
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .category_btn_container {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}

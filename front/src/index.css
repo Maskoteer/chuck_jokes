@@ -1,0 +1,39 @@
+:root {
+  --card_title_color: #303030;
+  --card_border_color: #ecebe9;
+  --card_background: white;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assets/Montserrat/Montserrat-Medium.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+main,
+.nav_list,
+.footer_container,
+.hamburger_menu_comp .hamburger_menu_content {
+  width: 90%;
+  margin: auto;
+}
+
+/* media queries */
+@media (max-width: 767px) {
+  main,
+  .nav_list,
+  .footer_container,
+  .hamburger_menu_comp .hamburger_menu_content {
+    width: 96%;
+  }
+}

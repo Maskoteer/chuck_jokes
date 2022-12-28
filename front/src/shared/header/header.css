@@ -1,0 +1,10 @@
+.header_comp {
+  margin-bottom: 80px;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+  .header_comp {
+    margin-bottom: 30px;
+  }
+}
